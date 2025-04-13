@@ -1,0 +1,203 @@
+html {
+    font-family: Poppins, sans-serif;
+}
+
+/*****************************/
+/*Styles for EmployeesListItem*/
+/*****************************/
+
+.employee-list {
+    padding: 30px;
+}
+
+.employee-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    gap: 20px;
+}
+
+.employee-name {
+    border: none;
+    background: #F9F9F9;
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1 1;
+    padding: 20px;
+    border-bottom: 1px solid #949494;
+}
+
+.employee-salary {
+    border: none;
+    background: #F9F9F9;
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1 1;
+    padding: 20px;
+    border-bottom: 1px solid #949494;
+    font-family: Poppins, sans-serif;
+}
+
+.btn {
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    background-color: #E4E68B;
+    color: #AAAC31;
+    width: 64px;
+    height: 64px;
+}
+
+.delete-btn {
+    background-color: #F19D97;
+    color: #A53C35;
+    width: 64px;
+    height: 64px;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    font-size: 22px;
+}
+
+/*****************************/
+/*Styles for EmployeesListItem*/
+/*****************************/
+
+.app-info {
+    margin: 30px 30px 0 30px;
+}
+
+.app-title {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.app-stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 100px;
+}
+
+.app-stats-item {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*****************************/
+/*Styles for SearchPanel and AppFilter*/
+/*****************************/
+
+.search-filter-panel {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0 20px 0;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+
+.search-panel {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.search-input {
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    flex: 1;
+}
+
+.search-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+}
+
+.filter-btns {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+}
+
+.filter-btn.active {
+    background-color: #77B6AC;
+}
+
+/*****************************/
+/*Styles for EmployeesAddForm*/
+/*****************************/
+
+.add-form {
+    margin: 40px 0 60px 0;
+    padding: 0 30px;
+}
+
+.add-form-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.add-form-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.add-form-input {
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    flex: 1;
+}
+
+
+.add-form-btn {
+    padding: 10px 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
