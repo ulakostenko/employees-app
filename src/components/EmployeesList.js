@@ -1,6 +1,6 @@
 import EmployeesListItem from './EmployeesListItem';
 
-const EmployeesList = ({data}) => {
+const EmployeesList = ({data, onDelete, onEdit}) => {
     const elements = data.map((item, index) => {
         return (
             <EmployeesListItem
@@ -9,6 +9,8 @@ const EmployeesList = ({data}) => {
                 salary={item.salary}
                 increase={item.increase}
                 number={index + 1}
+                onDelete={() => onDelete(item.id)}
+                onEdit={(newItem) => onEdit(item.id, newItem)}
             />
         )
     });

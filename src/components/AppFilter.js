@@ -1,9 +1,27 @@
-const AppFilter = () => {
+const AppFilter = ({activeFilter, onFilterSelect}) => {
+
+    const buttonsData = [
+        {name: 'all', label: 'All Employees'},
+        {name: 'promotion', label: 'For Promotion'},
+        {name: 'salary', label: 'Salary over $1000'}
+    ];
+
+    const buttons = buttonsData.map(({name, label}) => {
+        const active = activeFilter === name ? 'active' : '';
+        return (
+            <button
+                type="button"
+                className={`filter-btn ${active}`}
+                key={name}
+                onClick={() => onFilterSelect(name)}>
+                {label}
+            </button>
+        )
+    });
+
     return (
         <div className="filter-btns">
-            <button className="filter-btn active">All Employees</button>
-            <button className="filter-btn">For Promotion</button>
-            <button className="filter-btn">Salary over $1000</button>
+            {buttons}
         </div>
     )
 }

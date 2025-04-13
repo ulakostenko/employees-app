@@ -26,6 +26,7 @@ html {
     flex: 1 1;
     padding: 20px;
     border-bottom: 1px solid #949494;
+    font-family: Poppins, sans-serif;
 }
 
 .employee-salary {
@@ -36,6 +37,53 @@ html {
     flex: 1 1;
     padding: 20px;
     border-bottom: 1px solid #949494;
+    font-family: Poppins, sans-serif;
+    outline: none;
+}
+
+.employee-name-edit {
+    border: none;
+    background: #F9F9F9;
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1 1;
+    padding: 20px;
+    border-bottom: 3px solid #77B6AC;
+    font-family: Poppins, sans-serif;
+}
+
+.employee-name-edit:focus {
+    /*border-bottom: 3px solid #77B6AC;*/
+    border-top: 1px solid #77B6AC;
+    border-left: 1px solid #77B6AC;
+    border-right: 1px solid #77B6AC;
+    outline: none;
+    /*background: black;*/
+}
+
+.employee-salary-edit {
+    border: none;
+    background: #F9F9F9;
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1 1;
+    padding: 20px;
+    border-bottom: 3px solid #77B6AC;
+    font-family: Poppins, sans-serif;
+}
+
+.employee-salary-edit:focus {
+    border-top: 1px solid #77B6AC;
+    border-left: 1px solid #77B6AC;
+    border-right: 1px solid #77B6AC;
+    outline: none;
+}
+
+.save-btn {
+    background-color: #000000;
+    color: #ffffff;
+    width: 64px;
+    height: 64px;
     font-family: Poppins, sans-serif;
 }
 
@@ -125,6 +173,11 @@ html {
     font-size: 16px;
     font-family: Poppins, sans-serif;
     flex: 1;
+    outline: none;
+}
+
+.search-input:focus {
+    outline: 2px solid #77B6AC;
 }
 
 .search-btn {
@@ -190,6 +243,10 @@ html {
     flex: 1;
 }
 
+.add-form-input:focus {
+    outline: 2px solid #77B6AC;
+}
+
 
 .add-form-btn {
     padding: 10px 40px;
@@ -201,3 +258,4 @@ html {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
+

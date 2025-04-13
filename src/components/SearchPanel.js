@@ -1,17 +1,31 @@
-const SearchPanel = () => {
+import {useState} from 'react';
+
+const SearchPanel = ({onUpdateSearch}) => {
+
+    const [term, setTerm] = useState('');
+
+    const onUpdateSearchValue = (e) => {
+        setTerm(e.target.value);
+    }
+
+    const onSearchSubmit = (e) => {
+        e.preventDefault();
+        onUpdateSearch(term);
+    }
+
     return (
-        <div className="search-panel">
+        <form className="search-panel" onSubmit={onSearchSubmit}>
             <input
                 type="text"
                 className="search-input"
                 placeholder="Find an Employee"
+                onChange={onUpdateSearchValue}
+                value={term}
             />
-            <button className="search-btn">
+            <button type="submit" className="search-btn">
                 <i className="fas fa-search"></i>
             </button>
-        </div>
+        </form>
     )
 }
-
 export default SearchPanel;
-
